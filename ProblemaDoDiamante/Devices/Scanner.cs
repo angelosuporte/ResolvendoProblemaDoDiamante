@@ -2,7 +2,7 @@
 
 namespace ProblemaDoDiamante.Devices
 {
-    class Scanner : Dispositivo
+    class Scanner : Dispositivo, IScanner
     {
         public override void ProcessDoc(string documento)
         {
@@ -11,7 +11,7 @@ namespace ProblemaDoDiamante.Devices
 
         public string Scan()
         {
-            return "Scanner scan resultado";
+            return "Scanner scan resultado: OK ";
         }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace ProblemaDoDiamante.Devices
 {
-    class Impressora : Dispositivo
+    class Impressora : Dispositivo, IImpressora
     {
         public override void ProcessDoc(string documento)
         {
@@ -11,7 +11,7 @@ namespace ProblemaDoDiamante.Devices
 
         public void Imprimir(string documento)
         {
-            Console.WriteLine("Impressora print " + documento);
+            Console.WriteLine("Impressora imprimindo: " + documento);
         }
     }
 }
